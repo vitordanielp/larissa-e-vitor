@@ -26,8 +26,13 @@ body {
 }
 
 a {
+    display: flex;
+    align-items: center;
+    color: #50c5ef;
+    text-shadow: 1px 1px 2px #303030b0;
     text-align: center;
     width: 100%;
-    font-size: x-large;
+    height: 100%;
+    font-size: xx-large;
     text-decoration: none;
 }
