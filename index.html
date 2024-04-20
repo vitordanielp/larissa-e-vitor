@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./src/aliancas-de-casamento.png" type="image/x-icon">
-        <title>Larissa & Vítor</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/aliancas-de-casamento.png" type="image/x-icon">
+    <title>Larissa & Vítor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-        <header>
-            <div class="foto-container">
-                <!-- Inserido como background em css -->
-                <!-- <img src="./src/verde.jpeg" alt="Foto-casal" id="foto-header"> -->
-                <h1><span>Larissa</span> & <span>Vítor</span></h1>
-            </div>
-        </header>
-        <main>
-            <!-- Contará os dias, horas, minutos e segundos até a data marcada -->
-            <section id="contador-container">
-                <h2>Você está convidado!</h2>
-                <p>Queremos que faça parte deste momento tão especial...</p>
-                <div id="contador">
-                    <div class="item-contador">
-                        <div class="circle contador" id="contador-dias">180</div>
-                        <span class="text contador">DIAS</span>
-                    </div>
-                    <div class="item-contador">
-                        <div class="circle contador" id="contador-horas">12</div>
-                        <span class="text contador">HORAS</span>
-                    </div>
-                    <div class="item-contador">
-                        <div class="circle contador" id="contador-minutos">30</div>
-                        <span class="text contador">MINUTOS</span>
-                    </div>
-                    <div class="item-contador">
-                        <div class="circle contador" id="contador-segundos">10</div>
-                        <span class="text contador">SEGUNDOS</span>
-                    </div>
+<body>
+    <header>
+        <div class="foto-container">
+            <!-- Inserido como background em css -->
+            <!-- <img src="./src/verde.jpeg" alt="Foto-casal" id="foto-header"> -->
+            <h1><span>Larissa</span> & <span>Vítor</span></h1>
+        </div>
+    </header>
+    <main>
+        <!-- Contará os dias, horas, minutos e segundos até a data marcada -->
+        <section id="contador-container">
+            <h2>Você está convidado!</h2>
+            <p>Queremos que faça parte deste momento tão especial...</p>
+            <div id="contador">
+                <div class="item-contador">
+                    <div class="circle contador" id="contador-dias">180</div>
+                    <span class="text contador">DIAS</span>
                 </div>
-            </section>
-            <section id="informacoes">
+                <div class="item-contador">
+                    <div class="circle contador" id="contador-horas">12</div>
+                    <span class="text contador">HORAS</span>
+                </div>
+                <div class="item-contador">
+                    <div class="circle contador" id="contador-minutos">30</div>
+                    <span class="text contador">MINUTOS</span>
+                </div>
+                <div class="item-contador">
+                    <div class="circle contador" id="contador-segundos">10</div>
+                    <span class="text contador">SEGUNDOS</span>
+                </div>
+            </div>
+        </section>
+        <section id="informacoes">
+            <div class="container-superior">
                 <article class="item cerimonia">
-                    <img src="./src/diamante-64.png" alt="Alianças-logo" class="logo">
+                    <img src="./src/diamante-64.png" alt="Alianças-logo" class="logo" draggable="false">
                     <h3>CERIMÔNIA</h3>
-                    <div class="data-item">
-                        <p><span>21/09</span> | <span>16h</span></p>
-                    </div>
-                    <p>Endereço</p>
-                    <button class="btn-location">Ver localização</button>
                 </article>
+                <div class="item linha-vertical"></div>
                 <article class="item celebracao">
-                    <img src="./src/bebida-64.png" alt="Alianças-logo" class="logo">
+                    <img src="./src/bebida-64.png" alt="Alianças-logo" class="logo" draggable="false">
                     <h3>CELEBRAÇÃO</h3>
-                    <div class="data-item">
-                        <p><span>21/09</span> | <span>16h</span></p>
-                    </div>
-                    <p>Endereço</p>
-                    <button class="btn-location">Ver localização</button>
                 </article>
-            </section>
-            <!-- <nav id="nav-menu">
+            </div>
+            <div class="container-inferior">
+                <div class="data-item">
+                    <p>21/09</p>
+                    <p>16h</p>
+                </div>
+                <p>Endereço</p>
+                <a href="https://maps.app.goo.gl/Zu3x2D2TRTKEenMh6" target="_blank" class="btn-location" draggable="false">Ver localização</a>
+            </div>
+        </section>
+        <!-- <nav id="nav-menu">
                 <div class="item-menu link circle">
                     <a href="https://www.amazon.com.br/hz/wishlist/ls/3AH9KM9VL2P92?ref_=wl_share"
                         target="_blank">Acessar
@@ -72,10 +73,10 @@
                 </div>
             </nav> -->
 
-        </main>
-        <footer>
-            <h2>Te esperamos...</h2>
-        </footer>
-    </body>
+    </main>
+    <footer>
+        <h2>Te esperamos...</h2>
+    </footer>
+</body>
 
 </html>

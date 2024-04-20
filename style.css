@@ -3,6 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+    --primary-color: #ffecc8;
+    user-select: none;
 }
 
 
@@ -13,22 +15,24 @@ body {
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
-    max-width: 768px;
     margin: 0 auto;
+    max-width: 768px;
 }
 
 main {
-    background: linear-gradient(#acdeff, #fff);
+    background: linear-gradient(var(--primary-color), #fff);
     min-width: 100%;
+    min-height: 90vh;
 }
 
 .foto-container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     height: 60vh;
     width: 100vw;
     max-height: 360px;
+    max-width: 768px;
     background-image: url("./src/verde.jpeg");
     background-position: top;
     background-size: 768px;
@@ -39,9 +43,10 @@ main {
     width: inherit;
     text-align: center;
     position: absolute;
+    margin-bottom: 20px;
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.95em;
+    font-size: clamp(32px, 10vw, 54px);
     font-weight: normal;
     word-spacing: .2em;
     z-index: 1;
@@ -67,6 +72,7 @@ main {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #505050;
     font-size: .8em;
+
     p {
         font-size: 1.4em;
         width: 70%;
@@ -101,7 +107,12 @@ main {
     text-align: center;
     line-height: 2em;
     font-size: .85em;
-    
+
+    .text {
+        font-size: clamp(8px, 3vw, 18px);
+        line-height: 40px;
+    }
+
 }
 
 .circle {
@@ -121,29 +132,72 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+    height: fit-content;
+    /* min-height: 350px; */
+    margin: 0 auto;
+
     .item {
-        min-height: 230px;
-        margin-bottom: 50px;
+        height: fit-content;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        justify-content: center;
+        font-size: clamp(12px, 3vw, 18px);
+        line-height: 40px;
+    }
+
+    .logo {
+        width: clamp(24px, 15vw, 60px);
+    }
+
+    .container-superior {
+        width: 50%;
+        min-width: 300px;
+        display: flex;
         justify-content: space-around;
+    }
+
+    .linha-vertical {
+        width: 1px;
+        height: 100px;
+        background: #555;
+    }
+
+    .container-inferior {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 200px;
     }
 }
 
+
+.data-item {
+    font-size: clamp(30px, 7vw, 54px);
+}
+
+
 .btn-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #333;
-    color: #fff;
     height: 35px;
-    width: 120px;
+    width: 140px;
     border-radius: 20px;
     text-decoration: none;
+    color: #fff;
+}
+
+.btn-location:active {
+    outline: inset 5px solid;
 }
 
 footer {
     width: 100%;
+    height: 10vh;
     background-image: none;
 }
 
@@ -154,9 +208,27 @@ footer h2 {
     text-align: center;
     width: inherit;
     font-family: "Great Vibes", cursive;
-    line-height: 2em;
+    line-height: 10vh;
     max-height: 250px;
 }
+
+header,
+main,
+footer {
+    border: none;
+}
+
+@media screen and (min-width: 770px) {
+
+    header,
+    main,
+    footer {
+        border: 2px solid #808080d0;
+        border-bottom: none;
+        border-top: none;
+    }
+}
+
 
 /* #logo-principal {
     outline: 2px solid #fff;
