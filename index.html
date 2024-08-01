@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/aliancas-de-casamento.png" type="image/x-icon">
     <title>Larissa & Vítor</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header>
-        <div class="foto-container">
+        <div class="foto-capa-container">
             <!-- Inserido como background em css -->
-            <h1><span>Larissa</span> & <span>Vítor</span></h1>
         </div>
     </header>
     <main>
+        <h1><span>Larissa</span> & <span>Vítor</span></h1>
         <!-- Contará os dias, horas, minutos e segundos até a data marcada -->
         <section id="contador-container">
-            <h2>Você está convidado!</h2>
-            <p>Queremos que faça parte deste momento tão especial...</p>
             <div id="contador">
                 <div class="item-contador">
                     <div class="circle contador" id="contador-dias">180</div>
@@ -35,48 +33,25 @@
                     <span class="text contador">MINUTOS</span>
                 </div>
                 <div class="item-contador">
-                    <div class="circle contador" id="contador-segundos">10</div>
+                    <div class="circle contador" id="contador-segundos"></div>
                     <span class="text contador">SEGUNDOS</span>
                 </div>
             </div>
         </section>
-        <section id="informacoes">
-            <div class="container-superior">
-                <article class="item cerimonia">
-                    <img src="./src/diamante-64.png" alt="Alianças-logo" class="logo" draggable="false">
-                    <h3>CERIMÔNIA</h3>
-                </article>
-                <div class="item linha-vertical"></div>
-                <article class="item celebracao">
-                    <img src="./src/bebida-64.png" alt="Alianças-logo" class="logo" draggable="false">
-                    <h3>CELEBRAÇÃO</h3>
-                </article>
-            </div>
-            <div class="container-inferior">
-                <div class="data-item">
-                    <p>28/09</p>
-                    <p>16h</p>
-                </div>
-                <p>Espaço Dream Garden</p>
-                <p>Ponte Alta Norte - Gama</p>
-                <a href="https://maps.app.goo.gl/LFLmk4btKoUAsgrk8" target="_blank" class="btn-location" draggable="false">Ver localização</a>
-            </div>
-        </section>
-        <!-- <nav id="nav-menu">
-                <div class="item-menu link circle">
-                    <a href="https://www.amazon.com.br/hz/wishlist/ls/3AH9KM9VL2P92?ref_=wl_share"
-                        target="_blank">Acessar
-                        lista de presentes</a>
-                </div>
-                <div class="item-menu link circle">
-                    <a href="https://forms.gle/W71TrmgYFpKSvGNi9" target="_blank">Confirmar presença</a>
-                </div>
-            </nav> -->
-
+        <article id='container-historia'>
+            <h2>Nossa história...</h2>
+            <p class="texto-historia">&emsp;A nossa história começa lá na 4º serie, onde dois estudantes se aproximaram e
+                tornaram-se melhores amigos. Mas como nem tudo são flores, Vítor precisou se mudar, e a comunicação
+                entre os dois ficou mais difícil. Eles passaram a se comunicar apenas nas férias, que era quando ele
+                voltava para Brasília. Com isto, 7 anos se passaram, até que ele voltou para que pudessem ficar juntos,
+                e então desde 2015 este casal está junto construindo uma linda história de amor.<br>
+                &emsp;E após 9 anos juntos, resolveram juntar as escovas kkk. Agora vem aí.... o tão sonhado casamento,
+                com a benção de Deus e seus pais.</p>
+        </article>
+        <div id="foto-casal-container"></div>
     </main>
-    <footer>
-        <h2>Te esperamos...</h2>
-    </footer>
+    <a href="./pages/convite.html" target="_self" class="btn-nav" draggable="false">Abrir convite</a>
+    <script src="./main.js"></script>
 </body>
 
 </html>
