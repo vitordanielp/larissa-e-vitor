@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    --primary-color: #d3eefd;
+    --dark-grey: #333;
+    --light-grey: #505050;
+    --blue: #4cbce9;
+    user-select: none;
+}
+
+.foto-capa-container {
+    height: 100vh;
+    width: 100vw;
+    max-height: 40vh;
+    max-width: 768px;
+    background-image: url("../src/save-the-date-capa.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: #fefefe;
+    color: var(--dark-grey);
+}
+
+main {
+    background: linear-gradient(var(--primary-color), #fff);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 65vh;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+}
+
+.informacoes-container {
+    text-align: center;
+
+    h2, h3 {
+        font-size: 2.4em;
+    }
+
+    p {
+        text-transform: capitalize;
+    }
+}
+
+.data {
+    min-height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.botoes-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 40px;
+
+    .item {
+        display: flex;
+        flex-flow: column nowrap;
+        width: calc(70vw / 2);
+        min-height: 100px;
+        align-items: center;
+    }
+}
+
+.icone {
+    width: 42px;
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    height: 32px;
+    width: 128px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0.8em auto;
+    font-size: .9rem;
+}
+
+.btn-nav:active {
+    outline: inset 4px solid;
+}
+
+footer {
+    min-height: 120px;
+    text-align: center;
+    font-size: 2em;
+    line-height: 80px;
+}
+
+#botao-voltar {
+    background-color: var(--light-grey);
+    font-size: 1rem;
+}
