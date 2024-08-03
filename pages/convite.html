@@ -26,20 +26,20 @@
         </section>
         <nav class="botoes-container">
             <div class="item">
-                <img src="../src/presente-512.png" alt="" class="icone">
-                <a href="" class="btn-nav">Lista de presentes</a>
+                <img src="../src/presente-512.png" alt="icone-presente" class="icone">
+                <a href="https://www.amazon.com.br/hz/wishlist/ls/3AH9KM9VL2P92?ref_=wl_share" class="btn-nav" target="_blank">Lista de presentes</a>
             </div>
             <div class="item">
-                <img src="../src/logo-pix-520.png" alt="" class="icone">
-                <a href="" class="btn-nav">Copiar PIX</a>
+                <img src="../src/logo-pix-520.png" alt="icone-pix" class="icone">
+                <button class="btn-nav" onclick="copiarPix()">Copiar PIX</button>
             </div>
             <div class="item">
-                <img src="../src/pin-512.png" alt="" class="icone">
-                <a href="" class="btn-nav">Ver local</a>
+                <img src="../src/pin-512.png" alt="icone-local" class="icone">
+                <a href="https://maps.app.goo.gl/F5LcwfS7D1Kem6Hs9" class="btn-nav" target="_blank">Ver local</a>
             </div>
             <div class="item">
-                <img src="../src/check-512.png" alt="" class="icone">
-                <a href="" class="btn-nav">Confirmar presença</a>
+                <img src="../src/check-512.png" alt="icone-checkmark" class="icone">
+                <a href="https://forms.gle/kj1ZcJaisb2myLnVA" class="btn-nav" target="_blank">Confirmar presença</a>
             </div>
         </nav>
     </main>
@@ -47,5 +47,25 @@
         <p>Te esperamos...</p>
         <a href="../index.html" class="btn-nav" id="botao-voltar">Voltar</a>
     </footer>
+
+    <script>
+        const pix = '00020126330014BR.GOV.BCB.PIX0111068577301995204000053039865802BR5925Vitor Daniel Pontes Guede6009SAO PAULO62140510SDCOOaUwVN6304395A';
+        const button = document.querySelector('button');
+        function copiarPix() {
+            navigator.clipboard.writeText(pix);
+            avisoPixCopiado(button);
+        }
+
+        function avisoPixCopiado(target) {
+            let text = target.innerText;
+            let defaultColor = target.style.backgroundColor;
+            target.innerText = 'PIX copiado!';
+            target.style.backgroundColor = '#0c0';
+            setTimeout(() => {
+                target.innerText = text;
+                target.style.backgroundColor = defaultColor;
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
