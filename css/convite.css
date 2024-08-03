@@ -22,8 +22,14 @@
 }
 
 body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #fefefe;
     color: var(--dark-grey);
+    margin: 0 auto;
+    max-width: 768px;
 }
 
 main {
@@ -33,6 +39,7 @@ main {
     align-items: center;
     justify-content: space-around;
     min-height: 65vh;
+    width: 100%;
 }
 
 h1 {
@@ -68,7 +75,8 @@ h1 {
     .item {
         display: flex;
         flex-flow: column nowrap;
-        width: calc(90vw / 2);
+        width: 50vw;
+        max-width: 200px;
         min-height: 100px;
         align-items: center;
     }
@@ -107,4 +115,12 @@ footer {
 #botao-voltar {
     background-color: var(--light-grey);
     font-size: .8rem;
+}
+
+
+@media screen and (min-width: 460px){
+    .foto-capa-container {
+        max-height: 560px;
+        height: 560px;
+    }
 }
