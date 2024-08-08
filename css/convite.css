@@ -107,11 +107,11 @@ h1 {
 
 #galeria-de-fotos {
     width: 80vw;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 
     h3 {
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin: 10px auto;
     }
 }
@@ -153,9 +153,9 @@ h1 {
     opacity: .6;
 }
 
-.btn-carousel:hover {
+/* .btn-carousel:hover {
     background-color: #ffffff30;
-}
+} */
 
 .btn-carousel::after,
 .btn-carousel::before {
@@ -187,7 +187,7 @@ h1 {
 footer {
     min-height: 120px;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 80px;
 }
 
